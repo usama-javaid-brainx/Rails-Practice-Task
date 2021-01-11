@@ -1,2 +1,9 @@
 <h1>Articles</h1>
-<p>I am articles controller</p>
+
+<ul>
+  <% @articles.each do |article| %>
+    <li>
+      <%= link_to article.body, article %>
+    </li>
+  <% end %>
+</ul>
